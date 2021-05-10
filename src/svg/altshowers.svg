@@ -1,0 +1,18 @@
+<svg width="57.587" height="57.587" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <path stroke="null" id="svg_1" fill="#77cef9" d="m31.15285,34.341057a12.528917,10.603232 0 1 0 -12.039666,-13.507648a8.74741,7.40294 0 1 0 -4.946537,13.507648l16.986203,0z"/>
+  <path stroke="null" transform="rotate(0.38754478096961975 23.224679946898767,16.45920372009281) " id="svg_7" fill="#77cef9" d="m27.925274,24.752947a8.925576,8.293745 0 1 0 -8.577034,-10.565551a6.231638,5.790508 0 1 0 -3.523903,10.565551l12.100937,0z"/>
+  <path stroke="null" transform="rotate(0.38754478096961975 35.32087707519545,26.873512268066925) " id="svg_8" fill="#77cef9" d="m40.442792,34.342116a9.725568,7.468608 0 1 0 -9.345789,-9.514388a6.790176,5.214415 0 1 0 -3.839752,9.514388l13.185542,0z"/>
+  <path stroke="null" transform="rotate(0.38754478096961975 35.96707916259731,27.434265136718768) " id="svg_9" fill="#77cef9" d="m41.548766,34.725536aNaN,NaN  0 0 -10.18472,-9.288478aNaN,NaN  0 0 -4.18443,9.288478l14.36915,0z"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 30.66943168640134,40.368209838867195) " id="svg_17" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m30.669432,43.966615l0,-7.19682"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 35.66378402709957,36.87425613403322) " id="svg_18" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m35.663786,38.099424l0,-2.45034"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 22.577728271484332,40.031051635742195) " id="svg_19" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m22.577726,43.629461l0,-7.19682"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 27.504646301269457,36.87425613403322) " id="svg_20" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m27.504649,38.099424l0,-2.45034"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(16.112770080566406 14.755743026733407,39.828758239746094) " id="svg_21" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m14.755743,43.427168l0,-7.19682"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 19.41294097900384,36.87425613403322) " id="svg_22" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m19.412943,38.099424l0,-2.45034"/>
+  <path stroke-width="2" stroke="#427eff" transform="rotate(15 38.76114273071284,40.435638427734375) " id="svg_23" stroke-linejoin="round" stroke-linecap="round" fill="none" d="m38.761139,44.034046l0,-7.19682"/>
+ </g>
+</svg>
