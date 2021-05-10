@@ -20,10 +20,10 @@ import React, {createContext, useState, useEffect} from 'react'
             
         }
 
-        /*useEffect(() => {
+        useEffect(() => {
             newsapiHandler();
             setHour(new Date().getHours());
-        }, [])*/
+        }, [])
 
         return(
             <HomeContext.Provider value={{

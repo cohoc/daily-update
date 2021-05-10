@@ -26,8 +26,6 @@ body{
   max-width: 250px;
   height: 35px;
   background-color: rgb(80, 80, 80);
-  border-radius: 10px;
-
 }
 
 .header-search{
@@ -51,7 +49,8 @@ body{
 .search-btn{
   width: 60px;
   height: 35px;
-  background: rgb(50, 50, 50);
+  background: rgb(37, 37, 37);
+  border: 1px solid rgb(80, 80, 80);
 }
 
 .search-btn:hover{

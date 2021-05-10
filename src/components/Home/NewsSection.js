@@ -19,6 +19,7 @@ function NewsSection() {
                                 description={news.description}
                                 image={news.urlToImage}
                                 url={news.url}
+                                date={news.publishedAt}
                             />
                         )} 
                     )}
