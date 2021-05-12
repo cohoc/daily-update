@@ -13,7 +13,8 @@ import React, {createContext, useState, useEffect} from 'react'
                 const result = await response.json();
                 setNews(result);
                 console.log(result);
-                
+                setHour(new Date().getHours());
+
             } catch (e){
                 console.log("Error in news fetch: ", e);
             }
@@ -22,7 +23,6 @@ import React, {createContext, useState, useEffect} from 'react'
 
         useEffect(() => {
             newsapiHandler();
-            setHour(new Date().getHours());
         }, [])
 
         return(

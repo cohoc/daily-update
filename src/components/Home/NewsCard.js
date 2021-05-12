@@ -20,16 +20,15 @@ const dateHandler = date => {
                 <div className="news-title-container">
                     <p id="news-title">{props.title}</p>
                 </div>
+                <div className="news-desc-container">
+                    <p id="news-description">{props.description}</p>
+                </div>
 
                 <div className="news-date-container">
                     <p id="news-date">{dateHandler(props.date)}</p>
                 </div>
             </div>
             
-
-            {/*<div className="news-desc-container">
-                <p id="news-description">{props.description}</p>
-            </div>*/}
 
             {/*<a className="news-readmore" href={`/${props.news}`}>
                 <span id="readmore-text">
