@@ -22,7 +22,7 @@ import React, {createContext, useState, useEffect} from 'react'
         }
 
         useEffect(() => {
-            newsapiHandler();
+            //newsapiHandler();
         }, [])
 
         return(

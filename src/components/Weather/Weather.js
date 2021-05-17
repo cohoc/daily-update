@@ -1,6 +1,6 @@
 import React, {useEffect, useContext} from 'react'
-import Subheader from '../Subheader';
-import Main from '../Main';
+import Subheader from './Subheader';
+import Main from './Main';
 import { WeatherProvider } from '../../contexts/WeatherContext';
 import { SearchContext } from '../../contexts/SearchContext'
 

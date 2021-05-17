@@ -1,9 +1,9 @@
 import React, {useContext, useEffect} from 'react'
-import {WeatherContext} from '../contexts/WeatherContext'
+import {WeatherContext} from '../../contexts/WeatherContext'
 import ForecastCard from './ForecastCard';
 import HourlyCard from './HourlyCard';
 import Icon from './Icon';
-import DownArrow from '../svg-components/DownArrow'
+import DownArrow from '../../svg-components/DownArrow'
 
 function Main(props) {
 

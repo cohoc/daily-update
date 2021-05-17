@@ -6,15 +6,17 @@ body{
 .main-header{
   width: 100%;
   height: 75px;
-  background: rgb(36, 36, 36);
+  position: absolute;
+  z-index: 2;
+  background: transparent;
 }
 
 .header-content{
+  position: relative;
   display: flex;
-  flex-direction: row;
-  max-width: 960px;
+  max-width: 1080px;
   height: 100%;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 20px 5px 20px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -46,6 +48,56 @@ body{
   color: transparent;
 }
 
+.header-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  flex: 0 1 40%;
+}
+
+.link-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 75%;
+  flex: 1 1 33%;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.link-container:hover #link{
+  color:rgb(160, 160, 160);
+}
+
+#link {
+  transition: all 500ms ease;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.hamburger-container{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  background: rgba(0,0,0,.20);
+  border-radius: 50%;
+}
+
+.hamburger-container:hover{
+  background: rgba(0,0,0,.3);
+}
+
+#hamburger{
+  width: 20px;
+  height: 20px;
+}
+
 .search-btn{
   width: 60px;
   height: 35px;
@@ -63,11 +115,23 @@ body{
   fill: white;
 }
 
+.home-logo{
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex: 1 1 50%;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .logo{
-  color: white;
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex: 1 1 500px;
   font-size: 20px;
-  letter-spacing: 2px;
-  font-weight: 800;
+  letter-spacing: 4px;
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -413,10 +477,23 @@ body{
 
 @media screen and (max-width: 600px){
 
+  .header-links{
+    display: none;
+  }
+
+  .hamburger-container{
+    display: flex;
+
+  }
+
   #fc-condition, .fc-precip{
     display: none;
   }
   .fc-con-container{
     justify-content: center;
+  }
+
+  .link-container{
+    font-size: 2.5vw;
   }
 }

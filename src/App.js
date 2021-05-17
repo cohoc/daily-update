@@ -4,6 +4,7 @@ import Home from './components/Home/Home'
 import Weather from './components/Weather/Weather'
 import {SearchProvider} from './contexts/SearchContext';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import HomeHeader from './components/HomeHeader';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <Router>
         <SearchProvider>
-          <Header/>
+          <HomeHeader/>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/weather/:cityId" component={Weather} />
