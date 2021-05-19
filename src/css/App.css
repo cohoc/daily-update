@@ -115,10 +115,13 @@ body{
   fill: white;
 }
 
-.home-logo{
+.home-logo-container{
   display: flex;
-  color: rgb(255, 255, 255);
   flex: 1 1 50%;
+}
+
+.home-logo{
+  color: rgb(255, 255, 255);
   font-size: 24px;
   letter-spacing: 4px;
   font-weight: bold;
@@ -475,7 +478,7 @@ body{
 /*      Classes used for resizing     */
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
   .header-links{
     display: none;

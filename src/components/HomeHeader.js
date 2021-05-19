@@ -6,10 +6,12 @@ function HomeHeader() {
     return (
         <div className="main-header">
             <div className="header-content">
-                <Link to='/' className="home-logo">              
-                    Daily Update
-                </Link>
-
+                <div className="home-logo-container">
+                    <Link to='/' className="home-logo">              
+                        Daily Update
+                    </Link>
+                </div>
+ 
                 <ul className="header-links">
                     <li className="link-container">
                         <Link to='/covid' id="link">
