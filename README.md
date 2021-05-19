@@ -4,7 +4,7 @@ Simple project that displays trending news for the day and searchable current an
 
 ## Screenshots
 
-![homepage](https://user-images.githubusercontent.com/80676377/117639391-7a72b980-b149-11eb-8434-dffaf62105e0.png)
+![homepage](https://user-images.githubusercontent.com/80676377/118622628-1d9c8200-b78d-11eb-8f10-c46ebf609c4d.png)
 ![weather page](https://user-images.githubusercontent.com/80676377/117639499-970ef180-b149-11eb-8f75-e79192d8d2f6.png)
 
 ## Todo
