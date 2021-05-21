@@ -1,11 +1,18 @@
 import React from 'react'
+import { NewsProvider } from '../../contexts/NewsContext'
 import '../../css/News.css'
+import NewsHeader from './NewsHeader'
+import NewsSection from './NewsSection'
 
 function News() {
     return (
-        <div className="news-container">
-            
-        </div>
+        <NewsProvider>
+            <div className="news-container">
+                <NewsHeader />
+                <NewsSection />
+            </div>
+        </NewsProvider>
+        
     )
 }
 
