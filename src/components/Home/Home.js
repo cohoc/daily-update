@@ -1,8 +1,9 @@
 import React from 'react'
 import '../../css/Home.css'
+import HomeHeader from './HomeHeader'
 import HomeHero from './HomeHero'
-import {HomeProvider} from '../../contexts/HomeContext';
 import Homecards from './Homecards';
+import {HomeProvider} from '../../contexts/HomeContext';
 
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
     return (
         <HomeProvider>
             <div className="home-container">
+                <HomeHeader/>
                 <HomeHero/>
                 <section className="home-content">
                     <div className="home-button-header">

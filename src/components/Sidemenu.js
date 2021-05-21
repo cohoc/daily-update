@@ -14,19 +14,19 @@ function Sidemenu(props) {
                 </div>
 
                 <li className="side-link-container">
-                    <a id="side-link">
+                    <a id="side-link" href="/covid">
                         COVID
                     </a>
                 </li>
 
                 <li className="side-link-container">
-                    <a id="side-link">
+                    <a id="side-link" href="/weather">
                         WEATHER
                     </a>
                 </li>
 
                 <li className="side-link-container">
-                    <a id="side-link">
+                    <a id="side-link" href="/news">
                         NEWS
                     </a>
                 </li>

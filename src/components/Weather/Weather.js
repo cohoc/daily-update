@@ -1,31 +1,17 @@
-import React, {useEffect, useContext} from 'react'
-import Subheader from './Subheader';
+import React from 'react'
+import Header from './WeatherHeader';
 import Main from './Main';
 import { WeatherProvider } from '../../contexts/WeatherContext';
-import { SearchContext } from '../../contexts/SearchContext'
 
-function Weather({match}) {
-
-    const {setQueue, setCity} = useContext(SearchContext);
-
-    useEffect(() => {
-        setQueue(false);
-        setCity('')
-    },[])
-
-
-    const {
-        params: {cityId}
-    } = match;
+function Weather() {
 
     return (
         <WeatherProvider>
             <div>
-                <Subheader/>
-                <Main search={cityId}/>
+                <Header />
+                <Main />
             </div>
         </WeatherProvider>
-        
 
     )
 }

@@ -9,8 +9,8 @@ function Homecards() {
         <div className="home-buttons-container">
 
             <div className="home-button">
-                <div className="icon-container">
-                    <img src={covid} className="button-icon" alt="Covid" />
+                <div className="home-icon-container">
+                    <img src={covid} className="home-button-icon" alt="Covid" />
                 </div>
                 <div className="info-container">
                     <h2 id="info-header">
@@ -32,8 +32,8 @@ function Homecards() {
             </div>
 
             <div className="home-button">
-                <div className="icon-container">
-                    <img src={news} className="button-icon" alt="News"/>
+                <div className="home-icon-container">
+                    <img src={news} className="home-button-icon" alt="News"/>
                 </div>
                 <div className="info-container">
                     <h2 id="info-header">
@@ -55,8 +55,8 @@ function Homecards() {
             </div>
 
             <div className="home-button">
-                <div className="icon-container">
-                    <img src={weather} className="button-icon" alt="Weather"/>
+                <div className="home-icon-container">
+                    <img src={weather} className="home-button-icon" alt="Weather"/>
                 </div>
                 <div className="info-container">
                     <h2 id="info-header">

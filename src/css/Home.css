@@ -7,7 +7,71 @@
     background: rgb(255, 255, 255);
 }
 
+.home-header-container{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+}
 
+.home-header-content{
+    position: relative;
+    display: flex;
+    max-width: 1080px;
+    height: 100%;
+    padding: 5px 20px 5px 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.header-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    flex: 0 1 40%;
+}
+  
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 75%;
+    flex: 1 1 33%;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+
+#link {
+    transition: all 500ms ease;
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+  
+.hamburger-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    background: rgba(0,0,0,.20);
+    border-radius: 50%;
+}
+  
+.hamburger-container:hover{
+    background: rgba(0,0,0,.3);
+}
+  
+#hamburger{
+    width: 20px;
+    height: 20px;
+}
 
 .home-hero{
     width: 100%;
@@ -150,14 +214,17 @@
     padding: 20px 10px;
 }
 
-.icon-container{
+.home-icon-container{
     width: 100px;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: hsl(0, 0%, 15%);
     border-radius: 50%;
 }
 
-.button-icon{
+.home-button-icon{
     width: 50px;
     height: 50px;
 }

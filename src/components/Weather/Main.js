@@ -1,13 +1,13 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import {WeatherContext} from '../../contexts/WeatherContext'
 import ForecastCard from './ForecastCard';
 import HourlyCard from './HourlyCard';
 import Icon from './Icon';
 import DownArrow from '../../svg-components/DownArrow'
 
-function Main(props) {
+function Main() {
 
-    const {current, forecasted, day, setCity} = useContext(WeatherContext);
+    const {current, forecasted, day} = useContext(WeatherContext);
 
     const dateBuilder = date => {
         let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -22,10 +22,6 @@ function Main(props) {
         }
         return (descwords.join(" "));
     }
-
-    useEffect(() => {
-        setCity(props.search)
-    }, [props.search])
     
     return (
         <div className="main">
@@ -40,7 +36,7 @@ function Main(props) {
                             <p id="temperature">{Math.round(current.main.temp)}°F</p>
                             <p id="condition">{descBuilder(current.weather[0].description)}</p>
                         </div>
-                        <div className="icon-container">
+                        <div className="weather-icon-container">
                             <Icon code={current.weather[0].icon} width={200} height={200}/>
                         </div>
                     </div> 

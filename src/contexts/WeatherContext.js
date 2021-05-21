@@ -1,4 +1,4 @@
-import React, {createContext, useEffect, useState} from 'react'
+import React, {createContext, useState} from 'react'
 
 const WeatherContext = createContext();
 const WeatherProvider = props => {
@@ -8,43 +8,42 @@ const WeatherProvider = props => {
     const [forecasted, setForecasted] = useState({});
     const [city, setCity] = useState('');
 
+    const cityHandler = (e) => {
+        setCity(e.target.value);
+    }
 
-    useEffect( () => {
-        const weatherHandler = async (city) => {
-            if( city !== "" ){
-                try {  
-                    const weatherAPI = `${process.env.REACT_APP_WEATHER_URL}weather?q=${city}&units=imperial&APPID=${process.env.REACT_APP_WEATHER_KEY}`;
-                    const response = await fetch(weatherAPI);
-                    const result = await response.json();
-                    setCurrent(result);
-                    setDay(new Date().getDay());
-        
-                    console.log(result)
-                    forecastHandler(result.coord.lat, result.coord.lon);
-        
-                } catch (error) {
-                    console.log('Error:', error);
-                }
-
-            }
-            
-        }
+    const weatherHandler = async (evt) => {
+        if( evt.key === "Enter"){
+            try {  
+                const weatherAPI = `${process.env.REACT_APP_WEATHER_URL}weather?q=${city}&units=imperial&APPID=${process.env.REACT_APP_WEATHER_KEY}`;
+                const response = await fetch(weatherAPI);
+                const result = await response.json();
+                setCurrent(result);
+                setDay(new Date().getDay());
+                setCity('')
     
-        const forecastHandler = async (lat, lon) => {
-            const forecastAPI = `${process.env.REACT_APP_WEATHER_URL}onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,alerts&units=imperial&APPID=${process.env.REACT_APP_WEATHER_KEY}`;
-            const fcresponse = await fetch(forecastAPI);
-            const fcresult = await fcresponse.json();
-            setForecasted(fcresult);
-            console.log(fcresult);
-        }
+                console.log(result)
+                forecastHandler(result.coord.lat, result.coord.lon);
+    
+            } catch (error) {
+                console.log('Error:', error);
+            }
+        }   
+    }
 
-        weatherHandler(city);
-
-    }, [city])
+    const forecastHandler = async (lat, lon) => {
+        const forecastAPI = `${process.env.REACT_APP_WEATHER_URL}onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,alerts&units=imperial&APPID=${process.env.REACT_APP_WEATHER_KEY}`;
+        const fcresponse = await fetch(forecastAPI);
+        const fcresult = await fcresponse.json();
+        setForecasted(fcresult);
+        console.log(fcresult);
+    }
 
     return(
         <WeatherContext.Provider value={{
             setCity,
+            cityHandler,
+            weatherHandler,
             day, 
             current,
             forecasted,

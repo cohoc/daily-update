@@ -6,7 +6,8 @@ import React, {createContext, useState, useEffect} from 'react'
         const [news, setNews] = useState({});
         const [hour, setHour] = useState();
 
-        const newsapiHandler = async () => {
+        {/*
+            const newsapiHandler = async () => {
             try {
                 const newsapi = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=${process.env.REACT_APP_NEWS_KEY}`;
                 const response = await fetch(newsapi);
@@ -19,17 +20,21 @@ import React, {createContext, useState, useEffect} from 'react'
                 console.log("Error in news fetch: ", e);
             }
             
-        }
+            }
+
+        */}
 
         useEffect(() => {
             //newsapiHandler();
         }, [])
+
 
         return(
             <HomeContext.Provider value={{
                 news,
                 hour,
                 setNews,
+                setHour
                 }}>
                 {props.children}
             </HomeContext.Provider>

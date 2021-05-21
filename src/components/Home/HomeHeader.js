@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Hamburger from './Hamburger'
+import Hamburger from '../Hamburger'
 
 function HomeHeader() {
     return (
-        <div className="main-header">
-            <div className="header-content">
+        <div className="home-header-container">
+            <div className="home-header-content">
                 <div className="home-logo-container">
                     <Link to='/' className="home-logo">              
                         Daily Update
